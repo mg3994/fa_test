@@ -65,7 +65,7 @@ jobs:
             # artifacts: "build/app/outputs/flutter-apk/*"
             # tag: v1.0.${{ github.run_number }}
             # PAT: ${{secrets.GITHUB_TOKEN}} 
-            gh_pages: true
+            # gh_pages: true
             aab_generation: true
             apk_generation: true
             # ipa_generation: true
