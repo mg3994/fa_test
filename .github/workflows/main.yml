@@ -47,6 +47,7 @@ jobs:
         # #   # you can change flutter-version: as per subosito/flutter-action@version as per your choice 
             # flutter-version: '3.0.0' #prefered with dart sdk 2.16.x
         #     channel: 'stable'
+        - run: sudo apt install build-essential
         - run: flutter --version
         - run: flutter doctor -v
         - run: flutter pub get
