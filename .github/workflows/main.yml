@@ -33,7 +33,7 @@ jobs:
       permissions:
         contents: write
       name: Build & Release
-      runs-on: macos-latest #windows-latest # macos-latest # ubuntu-latest
+      runs-on: ubuntu-latest #windows-latest # macos-latest # ubuntu-latest
       steps:
         - uses: actions/checkout@v4
         - uses: actions/setup-java@v1
@@ -56,9 +56,9 @@ jobs:
         # - run: flutter pub run flutter_launcher_icons
         # - run: flutter gen-l10n
         - run: flutter build -h
-        - run: flutter build ipa -h
-        - run: flutter build macos -h
-        - run: flutter build ipa 
+        # - run: flutter build ipa -h
+        # - run: flutter build macos -h
+        # - run: flutter build ipa 
   
         # you can even build aab or ipa as per your command but remember you need to change the relese code for  artifacts:  directory
         # - run: flutter build apk --shrink --release --split-per-abi
