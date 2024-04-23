@@ -56,9 +56,9 @@ jobs:
         # - run: flutter pub run flutter_launcher_icons
         # - run: flutter gen-l10n
         - run: flutter build -h
-        # - run: flutter build ipa -h
+        - run: flutter build linux -h
         # - run: flutter build macos -h
-        # - run: flutter build ipa 
+        - run: flutter build linux
   
         # you can even build aab or ipa as per your command but remember you need to change the relese code for  artifacts:  directory
         # - run: flutter build apk --shrink --release --split-per-abi
