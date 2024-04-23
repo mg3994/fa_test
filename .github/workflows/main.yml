@@ -63,6 +63,13 @@ jobs:
         - run: flutter build linux -h
         # - run: flutter build macos -h
         - run: flutter build linux
+        - run: git config user.name github-actions
+        - run: git config user.email github-actions@github.com
+        - run:  git --work-tree build/ add --all
+        - run: git branch -M linux
+        - run: git commit -m "Automatic deployment by github-actions"
+        - run:  git push origin HEAD:linux --force
+        
   
         # you can even build aab or ipa as per your command but remember you need to change the relese code for  artifacts:  directory
         # - run: flutter build apk --shrink --release --split-per-abi
